@@ -1,0 +1,107 @@
+# BITS Pilani SGA – Git & GitHub Workflow
+Student Name: O. Mahamad Juber
+
+## 1. Repository Setup
+
+1. mkdir BITS_SGA
+   Creates a new project directory.
+
+2. cd BITS_SGA
+   Navigates into the project directory.
+
+3. git init -b main
+   Initializes a Git repository with main as the default branch.
+
+4. git status
+   Displays the current repository status and untracked files.
+
+## 2. Git Workflow
+
+5. git add .
+   Adds all project files to the staging area.
+
+6. git commit -m "Initial project setup"
+   Creates the first commit in the repository.
+
+7. git add index.html
+   Stages the modified homepage.
+
+8. git commit -m "Updated homepage content"
+   Records the homepage changes.
+
+9. git branch feature
+   Creates a new branch named feature.
+
+10. git switch feature
+    Switches to the feature branch.
+
+11. git add .
+    Stages the newly created contact page.
+
+12. git commit -m "Added contact page"
+    Commits the contact page to the feature branch.
+
+13. git switch main
+    Switches back to the main branch.
+
+14. git merge feature
+    Merges the feature branch into main.
+
+15. git log --oneline --graph --all
+    Displays commit history in a graphical format.
+
+## 3. .gitignore Implementation
+
+16. git check-ignore -v test.log temp/test.txt
+    Verifies that log files and files inside temp are ignored.
+
+17. git add .gitignore
+    Stages the .gitignore configuration file.
+
+18. git commit -m "Fixed gitignore rules"
+    Saves the ignore rules in Git history.
+
+## 4. Undo Operation
+
+19. git add undo_test.txt
+    Stages the temporary test file.
+
+20. git commit -m "Added temporary test file"
+    Creates an additional commit for the undo demonstration.
+
+21. git revert HEAD
+    Reverses the latest commit while preserving repository history.
+
+22. git log --oneline -5
+    Displays the recent five commits.
+
+23. git status
+    Verifies the working tree status.
+
+## 5. GitHub Integration
+
+24. git remote add origin REPOSITORY_URL
+    Connects the local repository to the remote GitHub repository.
+
+25. git remote -v
+    Displays the configured remote repository URLs.
+
+26. git push -u origin main
+    Pushes the main branch to GitHub and sets its upstream.
+
+27. git push -u origin feature
+    Pushes the feature branch to GitHub.
+
+## 6. Final Verification
+
+28. git check-ignore -v test.log temp/test.txt
+    Confirms that the specified files are ignored.
+
+29. Test-Path undo_test.txt
+    Checks whether the reverted file exists.
+
+30. git log --oneline --graph --all
+    Displays the complete repository commit history.
+
+GitHub Repository:
+https://github.com/MAHAMAD-JUBER/BITS_SGA_Git_Workflow
